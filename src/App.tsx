@@ -11,6 +11,13 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hello World
             </p>
+            <h2>This is a new header</h2>
+            <img src="./Images/UDLogo.jpg" />
+            <ul>
+                <li>First list item</li>
+                <li>Second list item</li>
+                <li>Third list item</li>
+            </ul>
         </div>
     );
 }
