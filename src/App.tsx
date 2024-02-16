@@ -23,7 +23,7 @@ function App(): JSX.Element {
                 <li>Second list item</li>
                 <li>Third list item</li>
             </ul>
-            <Button onClick={() => console.log("Hello world!")}>
+            <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
             <Container>
