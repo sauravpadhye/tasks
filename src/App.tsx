@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import { Button } from "react-bootstrap";
 import img from "./Images/UDLogo.jpg";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 function App(): JSX.Element {
     return (
@@ -23,6 +26,28 @@ function App(): JSX.Element {
             <Button onClick={() => console.log("Hello world!")}>
                 Log Hello World
             </Button>
+            <Container>
+                <Row>
+                    <Col>
+                        <div
+                            style={{
+                                width: "500px",
+                                height: "500px",
+                                backgroundColor: "red"
+                            }}
+                        ></div>
+                    </Col>
+                    <Col>
+                        <div
+                            style={{
+                                width: "500px",
+                                height: "500px",
+                                backgroundColor: "red"
+                            }}
+                        ></div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
