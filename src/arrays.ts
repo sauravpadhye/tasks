@@ -42,6 +42,11 @@ export function stringsToIntegers(numbers: string[]): number[] {
  */
 // Remember, you can write functions as lambdas too! They work exactly the same.
 export const removeDollars = (amounts: string[]): number[] => {
+    /** this is wrong
+    const noDollarSign = amounts.filter((amt: string): boolean => amt === "?");
+    const values = stringsToIntegers(noDollarSign);
+    return values;
+    */
     return [];
 };
 
@@ -79,7 +84,16 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    return "";
+    if (addends.length === 0) {
+        return "0=0";
+    }
+    const sum = addends.reduce(
+        (currentTotal: number, num: number) => currentTotal + num,
+        0
+    );
+    const nums = addends.join("+");
+    const eq = `${sum}=${nums}`;
+    return eq;
 }
 
 /**
