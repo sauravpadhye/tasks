@@ -44,7 +44,8 @@ export function findQuestion(
  * with the given `id`.
  */
 export function removeQuestion(questions: Question[], id: number): Question[] {
-    return [];
+    const rem = questions.filter((question) => question.id !== id);
+    return rem;
 }
 
 /***
