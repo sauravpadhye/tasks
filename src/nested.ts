@@ -114,12 +114,12 @@ export function toCSV(questions: Question[]): string {
  */
 export function makeAnswers(questions: Question[]): Answer[] {
     const ans = questions.map((question) => ({
-        questionID: question.id,
+        questionId: question.id,
         text: "",
         submitted: false,
         correct: false
     }));
-    return [];
+    return ans;
 }
 
 /***
