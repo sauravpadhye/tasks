@@ -169,7 +169,10 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    const newQs = questions.map((question) =>
+        question.id === targetId ? { ...question, name: newName } : question
+    );
+    return newQs;
 }
 
 /***
