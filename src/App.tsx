@@ -7,6 +7,7 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Counter } from "./Counter";
 import { RevealAnswer } from "./RevealAnswer";
+import { ChangeType } from "./ChangeType";
 
 function App(): JSX.Element {
     return (
@@ -32,6 +33,8 @@ function App(): JSX.Element {
             <Counter></Counter>
             <hr></hr>
             <RevealAnswer></RevealAnswer>
+            <hr></hr>
+            <ChangeType></ChangeType>
             <hr></hr>
             <Container>
                 <Row>
