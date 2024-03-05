@@ -5,6 +5,12 @@ import img from "./Images/UDLogo.jpg";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { ChangeType } from "./components/ChangeType";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
 
 function App(): JSX.Element {
     return (
@@ -26,6 +32,19 @@ function App(): JSX.Element {
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
+            <hr></hr>
+            <Counter></Counter>
+            <hr></hr>
+            <RevealAnswer></RevealAnswer>
+            <hr></hr>
+            <ChangeType></ChangeType>
+            <hr></hr>
+            <StartAttempt></StartAttempt>
+            <hr></hr>
+            <TwoDice></TwoDice>
+            <hr></hr>
+            <CycleHoliday></CycleHoliday>
+            <hr></hr>
             <Container>
                 <Row>
                     <Col>
