@@ -5,9 +5,10 @@ import img from "./Images/UDLogo.jpg";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
-import { Counter } from "./Counter";
-import { RevealAnswer } from "./RevealAnswer";
-import { ChangeType } from "./ChangeType";
+import { Counter } from "./components/Counter";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { ChangeType } from "./components/ChangeType";
+import { StartAttempt } from "./components/StartAttempt";
 
 function App(): JSX.Element {
     return (
@@ -35,6 +36,8 @@ function App(): JSX.Element {
             <RevealAnswer></RevealAnswer>
             <hr></hr>
             <ChangeType></ChangeType>
+            <hr></hr>
+            <StartAttempt></StartAttempt>
             <hr></hr>
             <Container>
                 <Row>
