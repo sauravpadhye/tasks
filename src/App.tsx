@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Counter } from "./Counter";
+import { RevealAnswer } from "./RevealAnswer";
 
 function App(): JSX.Element {
     return (
@@ -29,6 +30,8 @@ function App(): JSX.Element {
             </Button>
             <hr></hr>
             <Counter></Counter>
+            <hr></hr>
+            <RevealAnswer></RevealAnswer>
             <hr></hr>
             <Container>
                 <Row>
