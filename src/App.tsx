@@ -9,6 +9,7 @@ import { Counter } from "./components/Counter";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { ChangeType } from "./components/ChangeType";
 import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
 
 function App(): JSX.Element {
     return (
@@ -38,6 +39,8 @@ function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr></hr>
             <StartAttempt></StartAttempt>
+            <hr></hr>
+            <TwoDice></TwoDice>
             <hr></hr>
             <Container>
                 <Row>
