@@ -5,6 +5,7 @@ import img from "./Images/UDLogo.jpg";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Counter } from "./Counter";
 
 function App(): JSX.Element {
     return (
@@ -26,6 +27,9 @@ function App(): JSX.Element {
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
+            <hr></hr>
+            <Counter></Counter>
+            <hr></hr>
             <Container>
                 <Row>
                     <Col>
