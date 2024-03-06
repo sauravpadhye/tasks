@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { render } from "react-dom";
 
 /**
  * Here is a helper function you *must* use to "roll" your die.
