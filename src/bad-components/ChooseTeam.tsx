@@ -18,6 +18,9 @@ export function ChooseTeam(): JSX.Element {
         if (!team.includes(member)) {
             setTeam((oldTeam) => [...oldTeam, member]);
         }
+        if (!allOptions) {
+            setAllOptions(PEOPLE);
+        }
     }
 
     function clearTeam() {
