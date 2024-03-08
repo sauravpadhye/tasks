@@ -9,7 +9,7 @@ export function CheckAnswer({
     const [answer, setAnswer] = useState<string>("");
     return (
         <div>
-            <Form.Group controlId="formMovieReleased">
+            <Form.Group controlId="formCheckAnswer">
                 <Form.Label>Type Answer Below:</Form.Label>
                 <Form.Control
                     type="number"

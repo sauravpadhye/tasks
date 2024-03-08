@@ -8,7 +8,7 @@ export function GiveAttempts(): JSX.Element {
         <div>
             <h3>Give Attempts</h3>
             <p>Attempts Remaining: {attempts}</p>
-            <Form.Group controlId="formMovieReleased">
+            <Form.Group controlId="formGive Attempts">
                 <Form.Label>Requested Attempts:</Form.Label>
                 <Form.Control
                     type="number"
