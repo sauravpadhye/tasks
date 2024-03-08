@@ -12,7 +12,9 @@ export function CheckAnswer({
             <Form.Group controlId="formCheckAnswer">
                 <Form.Label>Type Answer Below:</Form.Label>
                 <Form.Control
-                    type="number"
+                    type={
+                        typeof expectedAnswer === "number" ? "number" : "text"
+                    }
                     value={answer}
                     onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
                         setAnswer(event.target.value)
