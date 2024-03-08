@@ -8,7 +8,7 @@ export function EditMode(): JSX.Element {
         <div>
             <h3>Edit Mode</h3>
             {eMode ? (
-                <form className="form-switch">
+                <form>
                     <label htmlFor="name">Name:</label>
                     <input
                         type="text"
@@ -32,12 +32,13 @@ export function EditMode(): JSX.Element {
                     {name} is {isStudent ? "a student" : "not a student"}
                 </p>
             )}
-            <label>
+            <label className="form-switch">
                 Edit Mode:
                 <input
                     type="checkbox"
                     checked={eMode}
                     onChange={() => setEMode(!eMode)}
+                    data-testid="edit-mode-checkbox"
                 />
             </label>
         </div>
